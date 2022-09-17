@@ -79,7 +79,7 @@ function init(items){
                 <li><span>weight</span>${items[i].weight}kg</li>
                 <li><span>height</span>${items[i].height}cm</li>
                 <li><span>${items[i].date}</span></li>
-                <a href="#"><img data-index=${i} src="/img/baseline_highlight_off_black_24dp.png"></a>
+                <a href="#"><img data-index=${i} src="./img/baseline_highlight_off_black_24dp.png"></a>
             </ul> 
         </div>`
     }
