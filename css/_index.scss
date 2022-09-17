@@ -1,0 +1,256 @@
+.d-flex{
+    display: flex;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.d-none{
+    display: none;
+}
+
+
+.header{
+    height: 300px;
+    background: #424242;
+    justify-content: center;
+    align-items:center;
+    gap: 97px;
+    img{
+        width: 117px;
+        height: 117px;
+    }
+    .fill{
+        p{
+            color: #FFD366;
+            padding-bottom: 5px;
+        }
+        input{
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.18);
+            border: 2px solid #FFD366;
+            font-size: 24px;
+            padding-left: 16px;
+        }
+    }
+    .btn{
+        width: 120px;
+        height: 120px;
+        background: #FFD366;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 120px;
+        &::before {
+            content: "看結果";
+        }
+        &:hover{
+            box-shadow: 0px 0px 6px 5px rgba(255, 246, 66, 0.654);
+        }
+        .fill-text{
+            font-size: 24px;
+        }
+    }
+    .btn2{
+        width: 120px;
+        height: 120px;
+        background: #424242;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 120px;
+        position: relative;
+        &::before{
+            content: "判斷";
+            width: 100%;
+            font-size: 27px;
+            top: -13px;
+            left: 115px;
+            position: absolute;
+        }
+        .BMI{
+            font-size: 32px;
+            top: -12px;
+            left: 26px;
+            position: absolute;
+        }
+        .bmi-text{
+            font-size: 14px;
+            top: 15px;
+            left: 42px;
+            position: absolute;
+        }
+        .img{
+            top: 82px;
+            left: 75px;
+            background: url(../img/icons_loop.png) no-repeat center;
+            border-color: #424242;
+            border-radius: 50%;
+            position: absolute;
+            padding: 15px;
+        }
+    }
+    .underweight {
+        border: 6px solid #31BAF9;
+        color: #31BAF9;
+    }  
+    .underweight::before {
+        content: "過輕";
+    }
+    .underweight .img {
+        background-color: #31BAF9;
+    } 
+
+
+    .normal {
+        border: 6px solid #86D73E;
+        color: #86D73E;
+    }  
+    .normal::before {
+        content: "理想";
+    }
+    .normal .img {
+        background-color: #86D73E;
+    } 
+
+
+    .overweight {
+        border: 6px solid #FF982D;
+        color: #FF982D;
+    }
+    .overweight::before {
+        content: "過重";
+    }
+    .overweight .img {
+        background-color: #FF982D;
+    }
+
+
+    .obeseI {
+        border: 6px solid #FF6C02;
+        color: #FF6C02;
+    }
+    .obeseI::before {
+        content: "輕度肥胖";
+    }
+    .obeseI .img {
+        background-color: #FF6C02;
+    }
+
+
+    .obeseII {
+        border: 6px solid #FF6C02;
+        color: #FF6C02;
+    }
+    .obeseII::before {
+        content: "中度肥胖";
+    }
+    .obeseII .img {
+        background-color: #FF6C02;
+    }
+
+
+    .obeseIII {
+        border: 6px solid #FF1200;
+        color: #FF1200;
+    }
+    .obeseIII::before {
+        content: "重度肥胖";
+    }
+    .obeseIII .img {
+        background-color: #FF1200;
+    }
+}
+
+.underweightcolor{
+    border-left: 11px solid #31BAF9;
+}
+.normalcolor{
+    border-left: 11px solid #86D73E;
+}
+.overweightcolor{
+    border-left: 11px solid #FF982D;
+}
+.obeseIcolor{
+    border-left: 11px solid #FF6C02;
+}
+.obeseIIcolor {
+    border-left: 11px solid #FF6C02;
+}
+.obeseIIIcolor {
+    border-left: 11px solid #FF1200;
+}
+
+.main{
+    background: #f1f1f1;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 48px;
+    padding-bottom: 74px;
+    h3{
+        font-size: 24px;
+        margin-bottom: 36px;
+    }
+    .list-ul{
+        width: 850px;
+        height: 62px;
+        margin-bottom: 2%;
+        align-items:center;
+        justify-content: center;
+        background-color: #fff;
+        .color{
+            width: 1%;
+            height: 62px;
+        }
+        li{
+            text-align: center;
+            width: 15%;
+            font-size: 24px;
+            font-weight: bold;
+            span{
+                font-size: 12px;
+                margin-right: 8px;
+            }
+        }
+        a{
+            margin-left: 112px;
+            margin-top: 5px;
+        }
+    }
+    .deleteAll{
+        margin-top: 35px;
+        margin-left: 325px;
+        color: blue;
+        width: 190px;
+        padding: 10px;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        &:hover{
+            border-radius: 20px;
+            background-color: #BEBEBE;
+        }
+    }
+}
+
+
+
+
+.Footer{   
+    height: 90px;
+    background: #FFD366;
+    justify-content: center;
+    align-items:center;
+    img{
+        width: 55px;
+        height: 55px;
+    }
+}

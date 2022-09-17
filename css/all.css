@@ -1,0 +1,368 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
+}
+
+.header {
+  height: 300px;
+  background: #424242;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 97px;
+}
+
+.header img {
+  width: 117px;
+  height: 117px;
+}
+
+.header .fill p {
+  color: #FFD366;
+  padding-bottom: 5px;
+}
+
+.header .fill input {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid #FFD366;
+  font-size: 24px;
+  padding-left: 16px;
+}
+
+.header .btn {
+  width: 120px;
+  height: 120px;
+  background: #FFD366;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+}
+
+.header .btn::before {
+  content: "看結果";
+}
+
+.header .btn:hover {
+  -webkit-box-shadow: 0px 0px 6px 5px rgba(255, 246, 66, 0.654);
+          box-shadow: 0px 0px 6px 5px rgba(255, 246, 66, 0.654);
+}
+
+.header .btn .fill-text {
+  font-size: 24px;
+}
+
+.header .btn2 {
+  width: 120px;
+  height: 120px;
+  background: #424242;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  position: relative;
+}
+
+.header .btn2::before {
+  content: "判斷";
+  width: 100%;
+  font-size: 27px;
+  top: -13px;
+  left: 115px;
+  position: absolute;
+}
+
+.header .btn2 .BMI {
+  font-size: 32px;
+  top: -12px;
+  left: 26px;
+  position: absolute;
+}
+
+.header .btn2 .bmi-text {
+  font-size: 14px;
+  top: 15px;
+  left: 42px;
+  position: absolute;
+}
+
+.header .btn2 .img {
+  top: 82px;
+  left: 75px;
+  background: url(../img/icons_loop.png) no-repeat center;
+  border-color: #424242;
+  border-radius: 50%;
+  position: absolute;
+  padding: 15px;
+}
+
+.header .underweight {
+  border: 6px solid #31BAF9;
+  color: #31BAF9;
+}
+
+.header .underweight::before {
+  content: "過輕";
+}
+
+.header .underweight .img {
+  background-color: #31BAF9;
+}
+
+.header .normal {
+  border: 6px solid #86D73E;
+  color: #86D73E;
+}
+
+.header .normal::before {
+  content: "理想";
+}
+
+.header .normal .img {
+  background-color: #86D73E;
+}
+
+.header .overweight {
+  border: 6px solid #FF982D;
+  color: #FF982D;
+}
+
+.header .overweight::before {
+  content: "過重";
+}
+
+.header .overweight .img {
+  background-color: #FF982D;
+}
+
+.header .obeseI {
+  border: 6px solid #FF6C02;
+  color: #FF6C02;
+}
+
+.header .obeseI::before {
+  content: "輕度肥胖";
+}
+
+.header .obeseI .img {
+  background-color: #FF6C02;
+}
+
+.header .obeseII {
+  border: 6px solid #FF6C02;
+  color: #FF6C02;
+}
+
+.header .obeseII::before {
+  content: "中度肥胖";
+}
+
+.header .obeseII .img {
+  background-color: #FF6C02;
+}
+
+.header .obeseIII {
+  border: 6px solid #FF1200;
+  color: #FF1200;
+}
+
+.header .obeseIII::before {
+  content: "重度肥胖";
+}
+
+.header .obeseIII .img {
+  background-color: #FF1200;
+}
+
+.underweightcolor {
+  border-left: 11px solid #31BAF9;
+}
+
+.normalcolor {
+  border-left: 11px solid #86D73E;
+}
+
+.overweightcolor {
+  border-left: 11px solid #FF982D;
+}
+
+.obeseIcolor {
+  border-left: 11px solid #FF6C02;
+}
+
+.obeseIIcolor {
+  border-left: 11px solid #FF6C02;
+}
+
+.obeseIIIcolor {
+  border-left: 11px solid #FF1200;
+}
+
+.main {
+  background: #f1f1f1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px;
+  padding-bottom: 74px;
+}
+
+.main h3 {
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+.main .list-ul {
+  width: 850px;
+  height: 62px;
+  margin-bottom: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+.main .list-ul .color {
+  width: 1%;
+  height: 62px;
+}
+
+.main .list-ul li {
+  text-align: center;
+  width: 15%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main .list-ul li span {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.main .list-ul a {
+  margin-left: 112px;
+  margin-top: 5px;
+}
+
+.main .deleteAll {
+  margin-top: 35px;
+  margin-left: 325px;
+  color: blue;
+  width: 190px;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+.main .deleteAll:hover {
+  border-radius: 20px;
+  background-color: #BEBEBE;
+}
+
+.Footer {
+  height: 90px;
+  background: #FFD366;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer img {
+  width: 55px;
+  height: 55px;
+}
+/*# sourceMappingURL=all.css.map */
