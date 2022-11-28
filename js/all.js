@@ -3,6 +3,8 @@ let btn2 = document.querySelector('.btn2');
 let BMI = document.querySelector('.BMI');
 let img = document.querySelector('.img');
 let list = document.querySelector('.list');
+let heightCheck = document.querySelector('.heightCheck');
+let weightCheck = document.querySelector('.weightCheck');
 let data = JSON.parse(localStorage.getItem('listData')) || [];
 
 init(data);//更新畫面
@@ -16,12 +18,18 @@ btn.addEventListener('click',function(){
     
     
     if( height ==="" || height >= 300 || height <= 10 ){
-        alert('請輸入正確的身高數值！');
+        heightCheck.textContent="請輸入有效數字！！";
+        //alert('請輸入正確的身高數值！');
         return;
+    }else{
+        heightCheck.textContent=""
     }
     if( weight ==="" || weight >= 300 || weight <= 10 ){
-        alert('請輸入正確的體重數值！');
+        weightCheck.textContent="請輸入有效數字！！"
+        //alert('請輸入正確的體重數值！');
         return;
+    }else{
+        weightCheck.textContent=""
     }
     let bmi = (weight / ((height/100)**2)).toFixed(1);
     BMI.textContent = bmi;//置換內容為BMI結果 
@@ -86,6 +94,7 @@ function init(items){
     str+= `<a href="#" class="deleteAll">清除全部紀錄</a>`;
     list.innerHTML = str;
     }
+    
 }
 
 
@@ -131,7 +140,7 @@ function toggle(){
     btn2.classList.toggle('d-none')
 }
 
-
+//日期時間
 function getToday(){
     let now = new Date();
     let yyyy = now.getFullYear();
