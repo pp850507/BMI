@@ -19,6 +19,7 @@ btn.addEventListener('click',function(){
     
     if( height ==="" || height >= 300 || height <= 10 ){
         heightCheck.textContent="請輸入有效數字！！";
+        empty();
         //alert('請輸入正確的身高數值！');
         return;
     }else{
@@ -26,6 +27,7 @@ btn.addEventListener('click',function(){
     }
     if( weight ==="" || weight >= 300 || weight <= 10 ){
         weightCheck.textContent="請輸入有效數字！！"
+        empty();
         //alert('請輸入正確的體重數值！');
         return;
     }else{
@@ -122,8 +124,11 @@ function checkBMI(BMI){
     }
 }
 
-
-
+//輸入錯誤 清空文字
+function empty(){
+    height.value='';
+    weight.value='';
+}
 
 //切換 和 清空input的值
 img.addEventListener('click',function(){
@@ -131,6 +136,8 @@ img.addEventListener('click',function(){
     height.value='';
     weight.value='';
 });
+
+
 
 
 
